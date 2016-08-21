@@ -76,14 +76,14 @@ for (var i = 1; i <= 10; i++) {
 //    console.log(docs)
 //});
 //每页2条 取第三页数据
-var pageSize = 2;
-var pageNum = 3;
-
-personModel.find()
-    .sort({age: -1})//按年龄降序排列
-    .skip((pageNum - 1) * pageSize)//指定跳过的记录数
-    .limit(pageSize)//限定返回的条数
-    //在未调用exec方法前查询并不会真正发往数据库服务器
-    .exec(function (err, docs) {
-    console.log(docs)
-});
+//var pageSize = 2;
+//var pageNum = 3;
+//
+//personModel.find()
+//    .sort({age: -1})//按年龄降序排列
+//    .skip((pageNum - 1) * pageSize)//指定跳过的记录数
+//    .limit(pageSize)//限定返回的条数
+//    //在未调用exec方法前查询并不会真正发往数据库服务器
+//    .exec(function (err, docs) {
+//    console.log(docs)
+//});
