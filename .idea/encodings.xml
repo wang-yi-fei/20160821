@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/2mongoose.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/mongoose.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/populate.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wangyifei/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wangyifei/bin/www.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wangyifei/routes/article.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wangyifei/routes/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wangyifei/routes/user.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wangyifei/views/index.html" charset="UTF-8" />
   </component>
 </project>
