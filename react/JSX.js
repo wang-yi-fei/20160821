@@ -3,13 +3,13 @@
  * @type {string[]}
  */
 var persons = ['刘德华', '范冰冰', '郭跃'];
-var style = {color:'red'};
+var style = {color:'lightgrey'};
 ReactDOM.render(
     //有且只能一个顶级元素
     <div>
         {//遇到{}以js语法来进行解析
-            persons.map(function (person) {
-                return <div style={style}>Hello, {person}!</div>
+            persons.map(function (person,index) {
+                return <div className="green" style={style} key={index}>Hello, {person}!</div>
             })
         }
     </div>,
