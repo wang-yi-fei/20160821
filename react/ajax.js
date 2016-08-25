@@ -1,20 +1,20 @@
 var Suggestion = React.createClass({
-    //ÉèÖÃ³õÊ¼×´Ì¬
+    //è®¾ç½®åˆå§‹çŠ¶æ€
     getInitialState:function(){
         return {}
     },
-    handleChange: function () {//µ±ÎÄ±¾¿ò·¢Éú¸Ä±äµÄÊ±ºòÖ´ĞĞµÄº¯Êı
-        //»ñÈ¡ ÎÄ±¾¿òµÄÄÚÈİ ²¢ÇÒµ÷ÓÃ°Ù¶ÈµÄ½Ó¿Ú »ñÈ¡½á¹û ²¢ÏÔÊ¾ÔÚÁĞ±í×éÉÏ
+    handleChange: function () {//å½“æ–‡æœ¬æ¡†å‘ç”Ÿæ”¹å˜çš„æ—¶å€™æ‰§è¡Œçš„å‡½æ•°
+        //è·å– æ–‡æœ¬æ¡†çš„å†…å®¹ å¹¶ä¸”è°ƒç”¨ç™¾åº¦çš„æ¥å£ è·å–ç»“æœ å¹¶æ˜¾ç¤ºåœ¨åˆ—è¡¨ç»„ä¸Š
         var value = this.refs.input.value;
         //
         $.ajax({
             url: 'http://www.baidu.com/su',
             type: 'get',
             jsonp: 'cb',
-            dataType: 'jsonp',//Ö¸¶¨Êı¾İÀàĞÍÊÇjsonp
-            data: {wd: value},//Òª´«µİµÄ²ÎÊı¶ÔÏó
-            processDate: true,//Îªtrue±íÊ¾»á°Ñ²ÎÊı¶ÔÏóĞòÁĞ»¯³É²éÑ¯×Ö·ûÖĞ×·¼Óµ½urlºóÃæ
-            context:this,//Ö¸¶¨»Øµ÷º¯ÊıÖĞµÄthisÖ¸Õë
+            dataType: 'jsonp',//æŒ‡å®šæ•°æ®ç±»å‹æ˜¯jsonp
+            data: {wd: value},//è¦ä¼ é€’çš„å‚æ•°å¯¹è±¡
+            processDate: true,//ä¸ºtrueè¡¨ç¤ºä¼šæŠŠå‚æ•°å¯¹è±¡åºåˆ—åŒ–æˆæŸ¥è¯¢å­—ç¬¦ä¸­è¿½åŠ åˆ°urlåé¢
+            context:this,//æŒ‡å®šå›è°ƒå‡½æ•°ä¸­çš„thisæŒ‡é’ˆ
             success: function (result) {
                 console.log(result);
                 var data = result.s;

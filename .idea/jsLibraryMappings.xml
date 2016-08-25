@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/es6/function.js" libraries="{Node.js v6.2.2 Core Modules}" />
     <file url="file://$PROJECT_DIR$/es6/let.js" libraries="{ECMAScript 6, Node.js v6.2.2 Core Modules}" />
     <file url="file://$PROJECT_DIR$/es6/readfile.js" libraries="{Node.js v6.2.2 Core Modules}" />
+    <file url="file://$PROJECT_DIR$/react/server.js" libraries="{Node.js v6.2.2 Core Modules}" />
     <file url="file://$PROJECT_DIR$/wangyifei/app.js" libraries="{Node.js v6.2.2 Core Modules}" />
     <file url="file://$PROJECT_DIR$/wangyifei/bin/www.js" libraries="{Node.js v6.2.2 Core Modules}" />
     <file url="file://$PROJECT_DIR$/wangyifei/lesson/1.dubug.js" libraries="{Node.js v6.2.2 Core Modules}" />
