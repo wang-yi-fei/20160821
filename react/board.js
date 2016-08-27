@@ -1,11 +1,12 @@
 var Board = React.createClass({
     getInitialState(){
-      return {messages:[]};
+      return {messages:[this.props.messages]};
     },
    handleClick(event){
        event.preventDefault();
        var value=this.refs.txtMsg.value;
        this.state.messages.push(value);
+       localStorage.setItem('messages',JSON.stringify(this.state.messages));
        this.setState({messages:this.state.messages}, function () {
            this.refs.txtMsg.value='';
        })
@@ -40,8 +41,13 @@ var Board = React.createClass({
     }
 });
 
+//localStorage 是一个window全局变量
+//setItem(key,value) getItem(key)
+
+var messages=localStorage.getItem('messages');
+messages=messages?JSON.parse(messages):[];
 
 ReactDOM.render(
-    <Board/>,
+    <Board messages={messages}/>,
     document.querySelector('#app')
 );

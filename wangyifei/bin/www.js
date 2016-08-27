@@ -15,21 +15,16 @@ var http = require('http');
  * Get port from environment and store in Express.
  * 从环境变量中获取端口并且保存在express的内部
  */
-
 var port = normalizePort(process.env.PORT || '3000');
 //在内部保存一个值
 app.set('port', port);
-
 /**
  * Create HTTP server.
  */
-
 var server = http.createServer(app);
-
 /**
  * Listen on provided port, on all network interfaces.
  */
-
 server.listen(port);
 server.on('error', onError);
 
@@ -38,7 +33,6 @@ server.on('listening', onListening);
 /**
  * Normalize a port into a number, string, or false.
  */
-
 function normalizePort(val) {
     var port = parseInt(val, 10);
 
