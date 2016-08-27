@@ -4,7 +4,8 @@ var router = express.Router();
 
 /* 设置路由 */
 router.get('/', function (req, res, next) {
-    res.render('index', {title: '首页'});
+    //res.render('index', {title: '首页'});
+    res.redirect('/article/list')
 });
 
 module.exports = router;
