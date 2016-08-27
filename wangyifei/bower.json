@@ -1,14 +1,21 @@
 {
-  "name": "wangyifei",
+  "name": "201605blog2",
   "description": "",
   "main": "",
+  "authors": [
+    "zhufengnodejs <zhufengnodejs@126.com>"
+  ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/zhufengnodejs/201605blog2",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
-  ]
+    "tests",
+    "./public/lib"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
 }

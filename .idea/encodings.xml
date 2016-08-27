@@ -20,6 +20,7 @@
     <file url="file://$PROJECT_DIR$/react/state.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wangyifei/app.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wangyifei/bin/www.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wangyifei/middleware/auth.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wangyifei/routes/article.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wangyifei/routes/index.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wangyifei/routes/user.js" charset="UTF-8" />

@@ -11,6 +11,7 @@
     <file url="file://$PROJECT_DIR$/wangyifei/db/index.js" libraries="{Node.js v6.2.2 Core Modules}" />
     <file url="file://$PROJECT_DIR$/wangyifei/lesson/1.dubug.js" libraries="{Node.js v6.2.2 Core Modules}" />
     <file url="file://$PROJECT_DIR$/wangyifei/lesson/debug.js" libraries="{Node.js v6.2.2 Core Modules}" />
+    <file url="file://$PROJECT_DIR$/wangyifei/middleware/auth.js" libraries="{Node.js v6.2.2 Core Modules}" />
     <file url="file://$PROJECT_DIR$/wangyifei/routes/article.js" libraries="{Node.js v6.2.2 Core Modules}" />
     <file url="file://$PROJECT_DIR$/wangyifei/routes/index.js" libraries="{ECMAScript 6, Node.js v6.2.2 Core Modules}" />
     <file url="file://$PROJECT_DIR$/wangyifei/routes/user.js" libraries="{Node.js v6.2.2 Core Modules}" />
