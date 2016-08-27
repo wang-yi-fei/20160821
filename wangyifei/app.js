@@ -35,6 +35,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());//处理cookie 得到 req.cookies
 var settings = require('./settings');
 //当使用了session中间件之后，会在req.session,在不同的请求之间可以共享
+var flash=require('connect-flash');
 app.use(session({
     secret:'zfpx',//指定要加密cookie的密钥
     resave:true,//每次请求都要重新保存session
@@ -43,6 +44,13 @@ app.use(session({
         url:settings.dbUrl //指定了session的存储位置
     })
 }));
+//用来将flash消息赋给模板数据对象
+app.use(flash())
+app.use(function (req,res,next) {
+    res.locals.success=req.flash('success').toString();
+    res.locals.error=req.flash('error').toString();
+    next();
+});
 //静态文件中间件 根目录是public目录,所以在页面中引用静态文件的时候必须以public目录作为根目录
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -71,7 +79,6 @@ if (app.get('env') === 'development') {
         });
     });
 }
-
 // production error handler
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {

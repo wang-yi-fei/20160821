@@ -21,10 +21,12 @@ router.post('/reg', function(req, res, next) {
   Model('User').create(user,function(err,doc){
     //err 错误对象 doc 是保存成功后的对象
     if(err){
+      req.flash('error','注册失败'+err);
       //如果失败则滚回到上个页面重新填写
       return res.redirect('back');
     }else{
       //如果保存成功了，则把保存后的文档对象写入当前的session中
+      req.flash('error','注册成功');
       req.session.user  = doc;
       //重定向到首页
       return res.redirect('/');
