@@ -51,7 +51,7 @@ router.get('/detail/:articleId', function (req, res) {
     var articleId = req.params.articleId;
     Model('Article').findById(articleId).then(function (doc) {
         res.render('article/detail', {title: '文章详情页', article: doc});
-    })/*, function (err, doc) {
+    });/*, function (err, doc) {
         if (err) {
             req.flash('error', '查询文章详情失败');
             req.redirect('back')
@@ -59,5 +59,20 @@ router.get('/detail/:articleId', function (req, res) {
             res.render('article/detail', {title: '文章详情页', article: doc});
         }
     })*/
+});
+router.get('/delete/:_id', function (req, res) {
+    Model('Article').remove({_id:req.params._id},function(err,result){
+        if(err){
+            req.flash('error',err);
+            res.redirect('back');
+        }
+        req.flash('success', '删除文章成功!');
+        res.redirect('/');
+    });
+});
+router.get('/edit/:_id', function (req, res) {
+    Model('Article').findOne({_id:req.params._id},function(err,article){
+        res.render('article/add',{title:'编辑文章',article:article});
+    });
 });
 module.exports = router;

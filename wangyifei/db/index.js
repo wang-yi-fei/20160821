@@ -29,7 +29,7 @@ var ArticleModel = mongoose.model('Article',ArticleSchema);
 //在全局对象上定义一个方法属性，传入一个模型名称，返回此名称对应的模型
 global.Model = function(modelName){
     return mongoose.model(modelName);
-}
+};
 
 
 
